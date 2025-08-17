@@ -1,0 +1,77 @@
+/* Estilos para formularios en dispositivos móviles usando paleta blanco y negro */
+
+body {
+    background: #fff;
+    color: #111;
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    padding: 24px 16px;
+    max-width: 400px;
+    margin: 32px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+label {
+    font-size: 1rem;
+    color: #222;
+    margin-bottom: 6px;
+}
+
+input,
+textarea,
+select {
+    background: #f9f9f9;
+    border: 1px solid #222;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 1rem;
+    color: #111;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #000;
+}
+
+button,
+input[type="submit"] {
+    background: #111;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background: #333;
+}
+
+@media (max-width: 600px) {
+    form {
+        padding: 16px 8px;
+        max-width: 95vw;
+    }
+    input,
+    textarea,
+    select,
+    button {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
